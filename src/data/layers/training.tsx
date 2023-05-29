@@ -16,7 +16,7 @@ import type { DecimalSource } from "util/bignum";
 import { render } from "util/vue";
 import { createLayerTreeNode, createResetButton } from "../common";
 
-const id = "p";
+const id = "t";
 const layer = createLayer(id, function (this: BaseLayer) {
     const name = "Training";
     const color = "#4BDC13";
@@ -50,7 +50,7 @@ const layer = createLayer(id, function (this: BaseLayer) {
 
     const hotkey = createHotkey(() => ({
         description: "Reset for training points",
-        key: "p",
+        key: "t",
         onPress: resetButton.onClick
     }));
 
